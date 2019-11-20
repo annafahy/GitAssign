@@ -1,6 +1,6 @@
 package nuigalway.app;
 
-public class Student 
+public class Students 
 {
     String name;
     String age;
@@ -10,7 +10,7 @@ public class Student
     String courses;
     String[] module;
     
-    public Student(String name, String age, String dob, String id,String courses, String[] module){
+    public Students(String name, String age, String dob, String id,String courses, String[] module){
         this.name = name;
         this.age= age;
         this.dob = dob;
@@ -44,7 +44,7 @@ public class Student
         return courses;
     }
     public void setName(String n){
-       this.name = name;
+       this.name = n;
     }
     public void setAge(String a){
        this.age = a;

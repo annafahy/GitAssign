@@ -6,16 +6,22 @@ public class Course
 {
     String cName;
     String studentL;
-    DateTime start;
+    DateTime start = new DateTime();
     DateTime end;
     String modList;
     
-    public Student(String cName, String studentL, String modList, DateTime start, DateTime end){
+    public Course(String cName, String studentL, String modList, DateTime start, DateTime end){
         this.cName = cName;
         this.studentL = studentL;
         this.modList = modList;
         this.start = start;
         this.end = end;
+    }
+    public DateTime getStart() {
+    		return start;
+    }
+    public DateTime getEnd() {
+    	return end;
     }
     
     public String getCorName(){
@@ -32,14 +38,17 @@ public class Course
     public void setCorName(String corN){
        this.cName = corN;
     }
-    public void setStudentL(String studL){
-       this.studentL = studL;
-    }
    
     public void setModList(String modL){
        this.modList = modL;
     }
      public void setStudentList(String sList){
-       this.studentList = sList;
+       this.studentL = sList;
     }
+     public void setStart(DateTime s) {
+    	 this.start=s;
+     }
+     public void setEnd(DateTime e) {
+    	 this.end=e;
+     }
 }

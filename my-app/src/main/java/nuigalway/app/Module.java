@@ -7,7 +7,7 @@ public class Module
     String mId;
     String modCourses;
     
-    public Student(String mName, String studentList, String mId, String modCourses){
+    public Module(String mName, String studentList, String mId, String modCourses){
         this.mName = mName;
         this.studentList = studentList;
         this.mId = mId;
