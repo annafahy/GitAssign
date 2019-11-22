@@ -3,11 +3,11 @@ package nuigalway.app;
 public class Module 
 {
     String mName;
-    String studentList;
+    String[] studentList;
     String mId;
-    String modCourses;
+    String[] modCourses;
     
-    public Module(String mName, String studentList, String mId, String modCourses){
+    public Module(String mName, String[] studentList, String mId, String[] modCourses){
         this.mName = mName;
         this.studentList = studentList;
         this.mId = mId;
@@ -17,14 +17,14 @@ public class Module
     public String getModName(){
         return mName;
     }
-    public String getModCourses(){
+    public String[] getModCourses(){
         return modCourses;
     }
    
     public String getModId(){
         return mId;
     }
-     public String getStudentList(){
+     public String[] getStudentList(){
         return studentList;
     }
    
@@ -35,10 +35,10 @@ public class Module
        this.mId = modId;
     }
    
-    public void setModCourses(String mCourses){
+    public void setModCourses(String[] mCourses){
        this.modCourses = mCourses;
     }
-     public void setStudentList(String sList){
+     public void setStudentList(String[] sList){
        this.studentList = sList;
     }
 }

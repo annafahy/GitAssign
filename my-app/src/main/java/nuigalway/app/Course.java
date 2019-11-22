@@ -5,12 +5,12 @@ import org.joda.time.DateTime;
 public class Course 
 {
     String cName;
-    String studentL;
+    String[] studentL;
     DateTime start = new DateTime();
     DateTime end;
-    String modList;
+    String[] modList;
     
-    public Course(String cName, String studentL, String modList, DateTime start, DateTime end){
+    public Course(String cName, String[] studentL, String[] modList, DateTime start, DateTime end){
         this.cName = cName;
         this.studentL = studentL;
         this.modList = modList;
@@ -28,10 +28,10 @@ public class Course
         return cName;
     }
     
-     public String getStudentL(){
+     public String[] getStudentL(){
         return studentL;
     }
-     public String getModList(){
+     public String[] getModList(){
         return modList;
     }
    
@@ -39,10 +39,10 @@ public class Course
        this.cName = corN;
     }
    
-    public void setModList(String modL){
+    public void setModList(String[] modL){
        this.modList = modL;
     }
-     public void setStudentList(String sList){
+     public void setStudentList(String[] sList){
        this.studentL = sList;
     }
      public void setStart(DateTime s) {
