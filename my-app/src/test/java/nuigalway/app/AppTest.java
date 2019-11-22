@@ -41,9 +41,9 @@ public class AppTest
         DateTime end = dt.plusYears(4);
         Course cr = new Course("CT",stud,mod,dt,end);
         
-        DateTime exp = new DateTime(2019,11,22,15,59);
-        String st = exp.toString("yyyy-MMM-dd HH:mm");
-        assertEquals(st, cr.getStart().toString("yyyy-MMM-dd HH:mm"));
+        DateTime exp = new DateTime(2019,11,22,16,10);
+        String st = exp.toString("yyyy-MMM-dd HH");
+        assertEquals(st, cr.getStart().toString("yyyy-MMM-dd HH"));
     
     @Test
     public void endTime() {
@@ -53,9 +53,9 @@ public class AppTest
 		DateTime endT = dateT.plusYears(4);
 		Course course2 = new Course("CT",studL,modL,dateT,endT);
 		
-		DateTime endExp = new DateTime(2023,11,22,15,59);
-		String str = endExp.toString("yyyy-MMM-dd HH:mm");
-		assertEquals(str, course2.getEnd().toString("yyyy-MMM-dd HH:mm"));
+		DateTime endExp = new DateTime(2023,11,22,16,10);
+		String str = endExp.toString("yyyy-MMM-dd HH");
+		assertEquals(str, course2.getEnd().toString("yyyy-MMM-dd HH"));
     }
     @Test
     public void testStudentList() {
